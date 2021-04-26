@@ -26,7 +26,8 @@ App flavor variant not installing.
 Cannot inline bytecode built with JVM target 1.8 into bytecode that is being built with JVM target 1.6
 ----------------------------------
 * Solution: in module level **build.gradle**, add:
-     
+  
+```
 compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
@@ -34,3 +35,4 @@ compileOptions {
 kotlinOptions {
     jvmTarget = JavaVersion.VERSION_1_8
 }
+```
