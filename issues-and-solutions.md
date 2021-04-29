@@ -22,6 +22,12 @@ App flavor variant not installing.
 -------------------
 * **clean build** and build project again.
 
+-------------------------------------------------------------
+Dagger Hilt — ViewModelClass has no zero argument constructor
+-------------------------------------------------------------
+* make sure you annotated your Fragment/Activity **@AndroidEntrypoint**
+* make sure you annotated your ViewModel with **@HiltViewModel** and its constructor with **@Inject**
+
 ----------------------------------
 Cannot inline bytecode built with JVM target 1.8 into bytecode that is being built with JVM target 1.6
 ----------------------------------
