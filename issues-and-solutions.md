@@ -33,6 +33,7 @@ A failure occurred while executing org.jetbrains.kotlin.gradle.internal.KaptExec
 -------------------------------------------------------------------------------------
 * run with gradle build --scan
 * add **kapt.verbose=true** in **gradle.properties** file
+* make sure your fields aren't private if injecting them with **Hilt**
 
 ----------------------------------
 Cannot inline bytecode built with JVM target 1.8 into bytecode that is being built with JVM target 1.6
