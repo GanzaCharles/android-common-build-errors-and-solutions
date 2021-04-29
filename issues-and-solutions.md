@@ -28,6 +28,12 @@ Dagger Hilt — ViewModelClass has no zero argument constructor
 * make sure you annotated your Fragment/Activity **@AndroidEntrypoint**
 * make sure you annotated your ViewModel with **@HiltViewModel** and its constructor with **@Inject**
 
+-------------------------------------------------------------------------------------
+A failure occurred while executing org.jetbrains.kotlin.gradle.internal.KaptExecution
+-------------------------------------------------------------------------------------
+* run with gradle build --scan
+* add **kapt.verbose=true** in **gradle.properties** file
+
 ----------------------------------
 Cannot inline bytecode built with JVM target 1.8 into bytecode that is being built with JVM target 1.6
 ----------------------------------
