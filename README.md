@@ -35,6 +35,18 @@ A failure occurred while executing org.jetbrains.kotlin.gradle.internal.KaptExec
 * add **kapt.verbose=true** in **gradle.properties** file
 * make sure your fields aren't private if injecting them with **Hilt**
 
+--------------------------------------
+Cannot resolve InstantTaskExecutorRule
+--------------------------------------
+* add the following in your module-level gradle.build file
+
+```
+compileOptions {
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+    implementation "androidx.arch.core:core-testing:2.1.0"
+}
+```
+
 ----------------------------------
 Cannot inline bytecode built with JVM target 1.8 into bytecode that is being built with JVM target 1.6
 ----------------------------------
