@@ -41,10 +41,8 @@ Cannot resolve InstantTaskExecutorRule
 * add the following in your module-level gradle.build file
 
 ```
-compileOptions {
-    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
-    implementation "androidx.arch.core:core-testing:2.1.0"
-}
+androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+implementation "androidx.arch.core:core-testing:2.1.0"
 ```
 
 ----------------------------------
